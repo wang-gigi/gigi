@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 1000vh;
+        }
+        #box{
+            width: 300px;
+            height: 1000px;
+            background-color: brown;
+            /*會固定在你的瀏覽器上你選擇的位置上.不管滾動條如何滾動都部會改變位置*/
+            /*position: fixed;
+            top: 100px;
+            left: 5px;*/
+            /*position: relative;*/
+          
+        }
+        #boxa{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(9, 70, 70);
+            /*position: absolute;
+            top: 250px;
+            left: 50px;*/
+            position: sticky;
+            top: 200px;
+            left: 100px;
+        }
+        #boxb{
+            width: 100%;
+            height: 100vh;
+            background-color: aquamarine;
+          
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+            <div id="boxa"></div>
+    </div>
+    <div id="boxb">
+        
+    </div>
+</body>
+</html>

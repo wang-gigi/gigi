@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+width: 250px;
+height: 100vh;
+background-color: bisque;
+padding-top: 30px;
+float: left;
+}
+#nav .logo{
+width: 100px;
+height: 100px;
+margin: 0 auto;
+margin-bottom: 20px;
+}
+#nav .logo img{
+width: 100%;
+height: 100%;
+}
+#nav .list ul{
+margin: 0;
+padding: 0;
+list-style:none;
+text-align: center;
+}
+#nav .list ul a{
+    color: cadetblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+#content{
+width: calc(100% - 300px);
+height: 100vh;
+background-color: yellow;
+float: left;
+/* padding-top:  calc((100vh -600px) /2);*/
+position: relative;
+}
+#content .bigbox{
+width: 1200px;
+height: 800px;
+background-color: red;
+/* margin: 0 auto;*/
+position:  absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+#content .bigbox .card{
+width: calc((100% / 3) - 5px);
+height: 100%;
+float: left;
+transition: all 2s ease;
+}
+#content .bigbox .card:hover{
+    /* 位移 */
+    /* transform: translate(20px,20px); */
+    /* 縮放 */
+    /* transform: scale(-0,2); */
+    /* 旋轉 */
+    /* transform: rotate(360deg); */
+    /* 斜角 */
+    /* transform: skew(20deg); */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+/* 第1格 */
+#content .bigbox .first{
+background-image: url(../img/images\ \(2\).jfif);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+/* 第2格 */
+#content .bigbox .second{
+background-image: url(../img/下載\ 3.jfif);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin: 0 7.5px;
+}
+/* 第3格 */
+#content .bigbox .third{
+background-image: url(../img/images.jfif);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+@media (max-width:1305px){
+    #content{
+        background-color: khaki;
+    }
+    #content.bigbox{
+        width: 800px;
+        height: 500px;
+    }
+    #content.bigbox.first{
+        width: 100px;
+        height: calc(50% -5px);
+        margin-bottom: 10px;
+    }
+    #content.bigbox.second,#content.bigbox.third{
+        width: calc(50% -5xp);
+        height: calc(50% -5px);
+    }
+    #content.bigbox.second{
+        margin: 0px;
+        margin-right: 10px;
+    }
+}
+@media (max-width:1055px){
+    #nav{
+        width: 100%;
+        height: 100px;
+        position: relative;
+        padding-top: 50px;
+    }
+    #content{
+        width: 100%;
+        height: calc(100vh -100px);
+    }
+    #nav .logo{
+        width: 80px;
+        height: 80px;
+        margin: 0px;
+        position: absolute;
+        left: 30px;
+    }
+    #nav.list ul a{
+        float: none;
+        margin-left: 33px;
+    }
+    #nav .list ul{
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        transform: translateY(-50%);
+    }
+    #content .bigbox{
+        width: calc(100% -50px);
+        height: 800px;
+    }
+}
+@media(max-width:485px){
+    #nav{
+        padding-top: 10px;
+    }
+    #nav .logo{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #nav .list ul{
+        top: 91px;
+        right: unset;
+        left :7px;
+        transform: translate(0%,0%);
+        z-index: 1;
+        background-color: lightblue;
+        padding: 5px;
+    }
+    #nav .list ul a{
+        margin-left:0px;
+        display: block;
+    }
+    #nav .list{
+        width: 100px;
+        height: 50px;
+        background-color: blue;
+        float: left;
+    }
+    #content .bigbox{
+        width: 100%;
+        height: 100%;
+    }
+    content  .bigbox .card{
+        width: 100%;
+        height: calc(100% / 3);
+        margin: 0px;
+    }
+}

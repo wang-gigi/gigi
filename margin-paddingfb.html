@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #background {
+            width: 100%;
+            background-color: black;
+        }
+
+        #nav {
+            width: 100%;
+            height: 56px;
+            background-color: #242526;
+        }
+
+        #logo-seach {
+            padding-top: 5px;
+            width: 400px;
+            height: 100%;
+            float: left;
+        }
+
+        #logo {
+            font-size: 40px;
+            color: aqua;
+            float: left;
+            margin:0px 5px;
+        }
+        #seach{
+            height: 79%;
+            font-size: 20px;
+            float: left;
+            color: #b0b3b8;
+            background-color: #3a3b3c;
+            border-radius: 30px;
+            padding: 7px;
+            line-height: 30px;
+        }
+        input{
+            font-family:'FontAwesome';
+            border: 0;
+            font-size: 20px;
+            outline: none;
+            background-color: rgba(0,0,0,0);
+        }
+        #menu{
+            width: 600px;
+            height: 100%;
+            border: 1px solid orange
+            margin-left:calc( 50% - 300px);
+        }
+        #home {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: calc(100% / 10);
+            line-height: 56px;
+        }
+
+        #friend {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: calc(100% / 10);
+            line-height: 56px;
+        }
+
+        #video {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: calc(100% / 10);
+            line-height: 56px;
+        }
+
+        #shop {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: calc(100% / 10);
+            line-height: 56px;
+        }
+
+        #game {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: calc(100% / 10);
+            line-height: 56px;
+        }
+
+        #member {
+            width: 300px;
+            height: 100%;
+
+            float: right;
+        }
+
+        #function {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: 30px;
+            line-height: 56px;
+        }
+
+        #messenger {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: 30px;
+            line-height: 56px;
+        }
+
+        #notice {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: 30px;
+            line-height: 56px;
+        }
+
+        #personal {
+            font-size: 28px;
+            color: white;
+            float: left;
+            margin-left: 30px;
+            line-height: 56px;
+        }
+        #bottom-background{
+            width: 100%;
+            height: calc(100vh - 56px);
+            background-color:black ;
+
+        }
+        #info{
+            width: 1250px;
+            margin:  0 auto;
+           
+        }
+        #banner{
+            width: 100%;
+            position: relative;
+            margin-bottom: 40px;
+        }
+        img{
+            width: 100%;
+        }
+        #text-info{
+            color: white;
+        }
+        #heardimg{
+            width: 130px;
+            height: 130px;
+          position: absolute;
+         bottom: -122px;
+          left: 30px;
+
+        }
+        #himg{
+            border-radius: 50%;
+        }
+        #name{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        #fans{
+            margin-left: 187px;
+            margin-bottom: 70px;
+        }
+        #title{
+            font-size: 17px;
+        }
+        #star{
+            color: #f7b928;
+        }
+        #marvel{
+            color: #606771;
+        }
+        #send-messenger{
+            width: 312px;
+            height: 40px;
+            background-color: #2374e1;
+            float: right;
+            line-height: 40px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #send-messenger i{
+           margin-right: 10px; 
+        }
+       #home-button{
+        float: left;
+        margin-right: 10px;
+        font-size: 15px;
+       }
+        #about-button{
+            float: left;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        #photo-button{
+            float: left;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        #comment-button{
+            float: left;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        #more-button{
+            float: left;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        #detail{
+            float: right;
+        }
+        #good{
+            float: left;
+            width: 100px;
+            height: 50px;
+            background-color: #606771;
+            border-radius: 10px;
+            margin-right: 10px;
+            line-height: 50px;
+            text-align: center;
+        }
+        #search{
+            float: left;
+            width: 100px;
+            height: 50px;
+            background-color: #606771;
+            border-radius: 10px;
+            margin-right: 10px;
+            line-height: 50px;
+            text-align: center;
+        }
+        #other{
+            float: left;
+            width: 100px;
+            height: 50px;
+            background-color: #606771;
+            border-radius: 10px;
+            margin-right: 10px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background">
+        <div id="nav">
+            <div id="logo-seach">
+                <div id="logo"><i class="fa-brands fa-facebook"></i></div>
+                <div id="seach">
+                    
+                    <input type="text"  placeholder="&#xf002 搜尋 facebook">
+                </div>
+            </div>
+            <div id="menu">
+                <div id="home"><i class="fa-solid fa-house"></i></div>
+                <div id="friend"><i class="fa-solid fa-user-group"></i></div>
+                <div id="video"><i class="fa-solid fa-tv"></i></div>
+                <div id="shop"><i class="fa-solid fa-shop"></i></div>
+                <div id="game"><i class="fa-solid fa-dice-d6"></i></div>
+            </div>
+            <div id="member">
+                <div id="function"><i class="fa-solid fa-table-cells"></i></div>
+                <div id="messenger"><i class="fa-brands fa-facebook-messenger"></i></div>
+                <div id="notice"><i class="fa-solid fa-bell"></i></div>
+                <div id="personal"><i class="fa-regular fa-circle-user"></i></div>
+            </div>
+        </div>
+        <div id="bottom-background">
+            
+            <div id="info">
+                <div id="banner">
+                    <img src="./img/moon.jpg" alt="">
+                    <div id="heardimg">
+                        <img id="himg" src="./img/headimg.jpg" alt="">
+                    </div>
+                </div>
+                <div id="text-info">
+                    <div id="fans">
+                        <div id="fans-name">
+                            
+                      
+                            <div id="name">Acorn Studio 橡果藝術</div>
+                            <div id="title">@acornstudiotw  ·<span id="star"><i class="fa-solid fa-star"></i></span> 
+                                5,143則評論   . <span id="marvel"><i class="fa-solid fa-circle-exclamation"></i></span> 居家裝飾</div>
+    
+                        </div>
+                        <div id="send-messenger"><i class="fa-brands fa-facebook-messenger"></i>傳送訊息</div>
+                    </div>
+                    <hr >
+                    <div id="info-button">
+                        <div id="swich">
+                            <div id="home-button">首頁</div>
+                            <div id="about-button">關於</div>
+                            <div id="photo-button">相片</div>
+                            <div id="comment-button">評論</div>
+                            <div id="more-button">更多</div>
+                        </div>
+                        <div id="detail">
+                            <div id="good"><i class="fa-solid fa-thumbs-up"></i>讚</div>
+                            <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div id="other"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

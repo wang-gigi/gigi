@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*練習poaition relative跟 poaition absolute的用法*/
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;
+            margin-left: 80px;
+            margin-bottom: 30px;
+            float: left;
+        }
+        ##boxA{
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            position: absolute;
+            top: calc(50%,0);
+            /*要一起寫,改成transform:translate: (-50%,-50%);
+            但移動方向一定要top/left 從上面開始移動跟從左邊開始移動*/
+
+            /*改成right寫的話
+            top:50%;
+            right:50%;
+            transform:translate(50%,-50%)
+            向右跟向下移動要正號,向左跟向上移動要用負號*/
+        }
+        #boxB{
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+           position: absolute; 
+           letter-spacing: 50%;
+           transform: translate(-50%,0);
+        }
+        #boxC{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            bottom: 0px;
+            left: calc(50% - 50px);/*right:50%*/
+        }
+        #boxD{
+           width: 50px; 
+           height: 50px;
+           background-color: coral;
+           position: absolute;
+           top: calc(50% - 25px);
+           right: -25px;
+           /*right:0px;
+           top:50%;
+           transform:translate: (50%,-50%);*/
+        }
+        #boxE{
+            width: 50px;
+            height: 50px;
+           background-color: crimson; 
+           position: absolute;
+           right: 0px;
+           bottom: 0px;
+        }
+        #boxF{
+            width: 50%;
+            height: 50px;
+            background-color: chartreuse;
+            position: absolute;
+            top: calc(50% - 25px);
+            /*top:50%,
+            transform:translateY(-50%);
+            以Y軸為移動點)*/
+        }
+        #boxG{
+            width: 50px;
+            height: 50px;
+            background-color: dodgerblue;
+            position: absolute;
+            right: 0px;
+            top: calc(50% - 25px);
+        }
+        #boxH{
+            width: 50px;
+            height: 50px;
+            background-color: gold;
+            position: absolute;
+            left: 0px;
+            bottom: -25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="boxA"></div>
+    </div>
+    <div id="box">
+        <div id="boxB"></div>
+    </div>
+    <div id="box">
+        <div id="boxC"></div>
+    </div>
+    <div id="box">
+        <div id="boxD"></div>
+    </div>
+    <div id="box">
+        <div id="boxE"></div>
+    </div>
+    <div id="box">
+        <div id="boxF"></div>
+    </div>
+    <div id="box">
+        <div id="boxG"></div>
+    </div>
+    <div id="box">
+        <div id="boxH"></div>
+    </div>
+</body>
+</html>

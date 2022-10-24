@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/nav/favicon.ico" type="image/icon">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font-awesome 本地  -->
+    <!-- <link rel="stylesheet" href="./css/all.min.css"> -->
+    <link rel="stylesheet" href="./css/microsoft.css">
+    <title>Microsoft – 雲端、電腦、應用程式和遊戲</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: calc(1600px + 10%);
+    padding: 0 5%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+header #nav nav {
+    max-width: calc(1600px + 10%);
+    padding: 0 5%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+header #nav nav .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header #nav nav .container .list {
+    width: 60%;
+    display: flex;
+}
+
+header #nav nav .container .list .logo {
+    width: 137px;
+    height: 54px;
+    padding: 16px 6px 16px 10px;
+}
+
+header #nav nav .container .list .logo img {
+    width: 100%;
+}
+
+header #nav nav .container .list .small-list ul {
+    list-style: none;
+    display: flex;
+    font-size: 17px;
+
+}
+
+header #nav nav .container .list .small-list ul a {
+    color: #262626;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+header #nav nav .container .personal {
+    width: 355px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #nav nav .container .personal .microsoft-seach {
+    display: flex;
+
+}
+
+header #nav nav .container .personal .microsoft-seach .all-microsoft {
+    margin-right: 10px;
+    position: relative;
+}
+header #nav nav .container .personal .microsoft-seach .all-microsoft .serve{
+    width: 1230px;
+    height: 445px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 19px;
+    right: -160px;
+    z-index: 1;
+    padding: 15px 0px 0px 0px;
+    display: none;
+}
+header #nav nav .container .personal .microsoft-seach .all-microsoft .serve .top-serve{
+    width: 100%;
+    height: calc(100% - 38px);
+    display: flex;
+}
+
+header #nav nav .container .personal .microsoft-seach .all-microsoft .serve .top-serve ul{
+    padding: 0px;
+}
+header #nav nav .container .personal .microsoft-seach .all-microsoft .serve .top-serve ul>span{
+    padding: 10px 0px 10px 15px;
+}
+header #nav nav .container .personal .microsoft-seach .all-microsoft .serve .buttom-serve{
+width: 100%;
+height: 38px;
+background-color: #e6e6e6;
+border-bottom: 2px solid black;
+}
+header #nav nav .container .personal .microsoft-seach .all-microsoft .serve .buttom-serve ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 38px;
+}
+header #nav nav .container .personal .microsoft-seach .all-microsoft .serve .top-serve ul li{
+    padding: 10px 0px 10px 15px;
+}
+header #nav nav .container .personal .user-info {
+    display: flex;
+    align-items: center;
+}
+header #nav nav .container .personal .user-info .member{
+    display: flex;
+    align-items: center;
+    
+}
+header #nav nav .container .personal .user-info .member img{
+    width: 32px;
+    height: 32px;
+}
+header #nav nav .container .personal .user-info .shop {
+    margin-right: 10px;
+}
+
+main #banner {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+main #banner .product-title {
+    position: absolute;
+    top: 247px;
+    right: 330px;
+}
+
+main #banner .direction {
+    width: 200px;
+    position: absolute;
+    bottom: -74px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+
+}
+main #icon{
+    width: 100%;
+    margin-bottom: 100px;
+}
+main #icon .container .smaill-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+main #icon .container .smaill-icon li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+main #icon .container .smaill-icon li img{
+    width: 40px;
+ }
+ main #shop-card{
+    width: 100%;
+    margin-bottom: 300px;
+ }
+ main #shop-card .container .four-card-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+ main #shop-card .container .four-card-box .card .card-img{
+    width: 100%;
+
+ }
+ main #shop-card .container .four-card-box .card{
+    width: calc((100% - 72px) / 4);
+
+ }
+    </style>
+</head>
+<body>
+    <body>
+        <header>
+            <section id="nav">
+    
+                <nav>
+                    <div class="container">
+                        <div class="list">
+                            <div class="logo">
+                                <img src="./img/logo.png" alt="">
+                            </div>
+                            <div class="small-list">
+                                <ul>
+                                    <a href="">
+                                        <li>Microsoft 365</li>
+                                    </a><a href="">
+                                        <li>Teams</li>
+                                    </a><a href="">
+                                        <li>Windows</li>
+                                    </a><a href="">
+                                        <li> Surface</li>
+                                    </a><a href="">
+                                        <li> Xbox</li>
+                                    </a><a href="">
+                                        <li>支援</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="personal">
+                            <div class="microsoft-seach">
+    
+                                <div class="all-microsoft">
+                                    <label for="list">所有 Microsoft<i class="fa-sharp fa-solid fa-chevron-down"></i></label>
+                                    <input type="checkbox" id="list">
+                                    
+                                    <ul class="serve">
+                                        <div class="top-serve">
+    
+                                            <ul> <li>軟體</li>
+                                                <li>Windows 應用程式</li>
+                                                <li>OneDrive</li>
+                                                <li>Outlook</li>
+                                                <li>Skype</li>
+                                                <li>OneNote</li>
+                                                <li>Microsoft Teams</li>
+        
+                                            </ul>
+                                            <ul> <li>個人電腦和設備</li>
+                                                <li>選購 Xbox</li>
+                                                <li>電腦配件</li>
+        
+                                            </ul>
+                                            <ul> <li>娛樂</li>
+                                                <li>Xbox Game Pass Ultimate</li>
+                                                <li>Xbox Live Gold</li>
+                                                <li>Xbox 與遊戲</li>
+                                                <li>電腦遊戲</li>
+                                                <li>Windows 遊戲</li>
+        
+                                            </ul>
+                                            <ul> <li>商務適用</li>
+                                                <li>Microsoft Cloud</li>
+                                                <li>Microsoft 安全性</li>
+                                                <li>Azure</li>
+                                                <li>Dynamics 365</li>
+                                                <li>商務用 Microsoft 365</li>
+                                                <li>Microsoft 產業</li>
+                                                <li>Microsoft Power Platform</li>
+                                                <li>Windows 365</li>
+                                            </ul>
+                                            <ul> <li>開發人員與 IT</li>
+                                                <li>開發人員中心</li>
+                                                <li>文件</li>
+                                                <li>Microsoft Learn</li>
+                                                <li>Microsoft 技術社群</li>
+                                                <li>Azure Marketplace</li>
+                                                <li>AppSource</li>
+                                                <li>Visual Studio</li>
+        
+                                            </ul>
+                                            <ul> <li>其他</li>
+                                                <li>Microsoft Rewards</li>
+                                                <li>免費下載與安全性</li>
+                                                <li>教育</li>
+                                                <li>禮品卡</li>
+                                                <li>Licensing</li>
+                                            </ul>
+                                        </div>
+                                        <div class="buttom-serve">
+    
+                                            <ul>檢視網站地圖<i class="fa-solid fa-angle-right"></i></ul>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="seach">搜尋<i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i></div>
+                            </div>
+                            <div class="user-info">
+    
+                                <div class="shop">購物車<i class="fa-solid fa-cart-shopping"></i></div>
+                                <div class="member">登入<img src="./img/member .svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section id="banner">
+                <picture>
+                    <source media="(max-width: 539px)" srcset="./img/topbanner/539x440.avif">
+                    <source media="(max-width: 859px)" srcset="./img/topbanner/859x540.avif">
+                    <source media="(max-width: 1083px)" srcset="./img/topbanner/1083x600.avif">
+                    <source media="(max-width: 1399px)" srcset="./img/topbanner/1399x600.avif">
+                    <img width="100%" src="./img/1920x600.avif" alt="">
+                </picture>
+                <div class="product-title">
+                    <div class="new">新上市</div>
+                    <h1>Surface Pro 9</h1>
+                    <div class="text">
+                        平板電腦的彈性和筆記型電腦的效能 — 全都在一台攜帶超方便的裝置
+                    </div>
+                    <a href="">
+    
+                        <div class="sumbit">深入了解</div>
+                    </a>
+                </div>
+                <div class="direction">
+                    <div class="left"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="pront"><i class="fa-regular fa-circle"></i><i class="fa-solid fa-circle"></i></div>
+                    <div class="right"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </section>
+            <section id="icon">
+                <div class="container">
+    
+                    <ul class="smaill-icon">
+                        <li class="choose"><img src="./img/Microsoft-365.webp" alt="">
+                            <a href="">選擇您的 Microsoft 365</a>
+                        </li>
+                        <li class="buy"><img src="./img/icon-LL-surface-kickstand-120x120.webp" alt="">
+                            <a href="">選購 Surface 裝置</a>
+                        </li>
+                        <li class="get"><img src="./img/Microsoft-365.webp" alt="">
+                            <a href="">取得 Windows 11</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="shop-card">
+                <div class="container">
+                    <div class="four-card-box">
+    
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./img/Content-Card-Surface-Laptop-5-M1-Platinum-01-1.webp" alt="">
+                            </div>
+                            <div class="card-text">
+                                <div class="new">新上市</div>
+                                <div class="title">Surface Laptop 5</div>
+                                <div class="text">
+                                    配備細緻的風格和由第 12 代 Intel® Core 支援的多工速度，以及 Windows 11。
+                                </div>
+                                <div class="understand">
+                                    <a href="">
+                                        <span>深入了解</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./img/Content-Card-Surface-Studio-2-Plus-M1-01-1.jfif" alt="">
+                            </div>
+                            <div class="card-text">
+                                <div class="new">新上市</div>
+                                <div class="title">Surface Laptop 5</div>
+                                <div class="text">
+                                    Surface Studio 2+
+出色的設計，流暢的生產力
+運用配備 28 吋 PixelSense™ 觸控螢幕、功能最多變的全方位裝置，以任何角度發揮創造力和生產力。
+                                </div>
+                                <div class="understand">
+                                    <a href="">
+                                        <span>深入了解</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./img/gldn-MSFT-CP-Edge.avif" alt="">
+                            </div>
+                            <div class="card-text">
+                                <div class="new">新上市</div>
+                                <div class="title">Surface Laptop 5</div>
+                                <div class="text">
+                                    Microsoft Edge
+在您瀏覽時提供世界級的效能，以及更多的隱私、更充足的生產力與更高的價值。
+                                </div>
+                                <div class="understand">
+                                    <a href="">
+                                        <span>深入了解</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./img/Content-Card-AEM-PC-Game-Pass-Expansion-No-Logo.webp" alt="">
+                            </div>
+                            <div class="card-text">
+                                <div class="new">新上市</div>
+                                <div class="title">Surface Laptop 5</div>
+                                <div class="text">
+                                    PC Game Pass
+解鎖 100 多款精彩遊戲和 EA Play，而且首月只需 NT$30。 此優惠僅適用於新訂閱者。
+                                </div>
+                                <div class="understand">
+                                    <a href="">
+                                        <span>深入了解</span>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id=""></section>
+        </footer>
+</body>
+</html>

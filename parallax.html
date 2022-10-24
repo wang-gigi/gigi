@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comforter+Brush&family=Noto+Sans+Ethiopic&family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+           box-sizing: border-box; 
+           font-family: 'Anton', sans-serif ;
+           scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+       #top-img{
+        width: 100%;
+        height: 100vh;
+        /*引入圖片使用background-image*/
+        background-image: url(./img/parallay.webp);
+        /*調整圖片大小background-size*/
+        background-size: cover;
+        /*調整是否要重複印製到填滿 使用background-repeat*/
+        background-repeat:no-repeat ;
+        /*調整圖片角度使用background-position*/
+        background-position: center;
+        position: relative;
+        background-attachment:fixed;
+        opacity: 0.6;
+       } 
+       #text{
+        width: 331px;
+        height: 64px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 25px;
+        background-color:  #656565;
+        color: white;
+        padding: 18px;
+        text-align: center;
+        /*字距*/
+        letter-spacing: 10px;
+        transform: translate(-50%, -50%);
+
+       }
+       #mid-img{
+        width: 100%;
+        height: 40vh;
+        /* 引入圖片使用 background-image*/
+        background-image: url(.//img/parallay1.webp);
+        /* 調整圖片大小使用 background-size */
+        background-size: cover;
+         /* 調整是否要重複印製直到填滿 使用background-repeat */
+        background-repeat: no-repeat;
+         /* 調整圖片角度使用 background-position*/
+        background-position: center;
+        position: relative;
+        background-attachment: fixed;
+        opacity: 0.6;
+       }
+       #thr-img{
+        width: 100%;
+        height: 40vh;
+         /* 引入圖片使用 background-image*/
+        background-image: url(.//img/parallay2.webp);
+         /* 調整圖片大小使用 background-size */
+        background-size: cover;
+        /* 調整是否要重複印製直到填滿 使用background-repeat */
+        background-repeat: no-repeat;
+        /* 調整圖片角度使用 background-position*/
+        background-position: center;
+        position: relative;
+        background-attachment: fixed;
+        opacity: 0.6;
+       }
+       #mid-text{
+        width: 100%;
+        padding: 50px 80px;
+       }
+#mid-text h3 {
+    letter-spacing: 10px;
+    text-align: center;
+}
+#mid-text p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+#mid-img #main-text {
+    width: 331px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    padding: 18px;
+    text-align: center;
+    /* 字距 */
+    letter-spacing: 10px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0);
+    color: #f7f7f7f7;
+}
+#thr-img #thr-text {
+    width: 331px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    /* 字距 */
+    letter-spacing: 10px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0);
+    color: #f7f7f7f7;
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    background-color:rgba(217, 255, 0, 0.274) ;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    text-align: end;
+    line-height: 100px;
+    padding-right: 50px;
+}
+#nav a {
+    font-size: 20px;
+    margin-left: 10px;
+}
+#last-img {
+    width: 100%;
+    height: 100vh;
+    /* 引入圖片使用 background-image*/
+    background-image: url(.//img/parallay.webp);
+     /* 調整圖片大小使用 background-size */
+    background-size: cover;
+      /* 調整是否要重複印製直到填滿 使用background-repeat */
+    background-repeat: no-repeat;
+     /* 調整圖片角度使用 background-position*/
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    opacity: 0.6;
+}
+#last-img #last-text {
+    width: 331px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    background-color: #656565;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    /* 字距 */
+    letter-spacing: 10px;
+    transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <a href="#top-img">top</a>
+        <a href="mid-img">mid</a>
+        <a href="last-img">but</a>
+    </div>
+    <div id="topimg">
+        <div id="text">SCROLL DOWN</div>
+    </div>
+    <div id="mid-text">
+        <h3>PARALLAX DEMO</h3>
+        <p>
+          
+            Parallax scrolling is a web site trend where the background content is moved at a different speed than the
+            foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed
+            posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit
+            dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam
+            pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum
+            at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate
+            at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis
+            ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor
+            placerat leo.
+  </p>
+    </div>
+    <div id="mid-img">
+        <div id="main-text">LESS HEIGHT</div>
+    </div>
+    <div id="mid-text">
+        Scroll up and down to really get the feeling of how Parallax Scrolling works.
+    </div>
+    <div id="thr-img">
+        <div id="thr-text">SCROLL UP</div>
+    </div>
+    <div id="mid-text">
+        Scroll up and down to really get the feeling of how Parallax Scrolling works.
+    </div>
+    <div id="last-img">
+        <div id="last-text">COOL!</div>
+    </div>
+    
+</body>
+</html>

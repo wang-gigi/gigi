@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bigbox {
+            width: 1000px;
+            height: 800px;
+            border: 1px solid black;
+            display: flex;
+            /* 換行 */
+            /* flex-wrap:wrap ; */
+            /* 主軸線跟交錯軸交換 */
+            /* flex-direction: column; */
+            /* 主軸線的位置調整 */
+            /* justify-content:center; */
+            /* 交錯軸的位置調整 */
+            /* align-items: baseline; */
+            /* 群組排列 */
+            /* align-content: stretch; */
+        }
+
+        .box1 {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(216, 18, 18);
+            /* 會釋放原本體積 預設值為1 */
+            flex-shrink: 1;
+            /* 會把空白的區域變成自己的 預設值為0 */
+            flex-grow: 0;
+            /* 可以使用 % px em rem 設定寬度或高度 */
+            /* flex-basis: 0%; */
+            order: 1;
+           
+        }
+
+        .box2 {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(38, 173, 11);
+            /* 對 方塊單獨的使用 */
+            /* align-self:center; */
+            
+        }
+
+        .box3 {
+            width: 300px;
+           height:200px;
+            background-color: rgb(234, 238, 7);
+            order: -1;
+        }
+
+        .box4 {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(33, 200, 223);
+        }
+
+        .box5 {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(143, 7, 255);
+        }
+
+        .box6 {
+            width: 300px;
+            height: 200px;
+            background-color: rgb(255, 5, 222);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box1">1</div>
+        <div class="box2"></div>
+        <div class="box3">3</div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>

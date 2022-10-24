@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+            position: relative;
+            font-size: 100px;
+        }
+        #small{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            /* position 脫離父層,空間讓出來 */
+            /* position: absolute;
+            right: 0;
+            bottom: 0; */
+            
+            
+            /* transform : translate 移動顯示的位置,本體還在原位 */
+            /* transform: translate(400px,400px); */
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="small"></div>
+        123
+    </div>
+</body>
+</html>
